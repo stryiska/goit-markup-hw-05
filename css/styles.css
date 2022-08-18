@@ -799,8 +799,7 @@ background-color: rgba(47, 48, 58, 0.8);
 }
 .backdrop.is-hidden .modal {
     box-shadow: none;
-
-    scale: 95%;
+    opacity: 0;
 }
 .modal {
     position: absolute;
@@ -817,11 +816,9 @@ background-color: rgba(47, 48, 58, 0.8);
     border-radius: 4px;
     background-color: var(--main-background-color);
 
-    scale: 100%;
+    opacity: 1;
     transition: box-shadow 250ms var(--cubic-bezier),
-    scale 250ms var(--cubic-bezier),
-    transform 250ms var(--cubic-bezier);
-
+    opacity 250ms var(--cubic-bezier),;
 } 
 
 .icon-close-thumb {
